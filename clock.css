@@ -12,44 +12,84 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #222222; 
+    background: #1e1e1e;
     color: #fff;
     margin: 0;
-    
 }
 
 /* Clock container styling */
 #clockcontainer {
-    padding: 70px;
-    border-radius: 35px;
-    box-shadow: 0 0 80px rgba(255, 105, 180, 0.6), 0 0 150px rgba(255, 20, 147, 0.5), 0 0 200px rgba(0, 255, 255, 0.6); 
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 200, 255, 0.4), 0 0 60px rgba(255, 105, 180, 0.3);
     text-align: center;
-    background:transparent;
-   
-    border: 1px solid rgba(255, 105, 180, 0.4); /* Thin glowing 
+    background: rgba(34, 34, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 90%;
+    /* width: 500px;  */
+}
 
 /* Clock styling */
 #clock {
-    background-color: rgba(34, 34, 34, 0.8); 
-    padding: 40px 70px;
-    border-radius: 20px;
-    
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 30px 50px;
+    border-radius: 15px;
     text-align: center;
 }
 
-
+/* Time digits */
 #d1 {
-    font-size: 9em;
+    font-size: 6em;
     font-weight: bold;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     color: #00bcd4;
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
-
+/* Colon styling */
 .colon {
-    font-size: 9em; 
+    font-size: 6em;
     font-weight: bold;
-    color: #ff1493; 
+    color: #ff1493;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 840px) {
+    #clockcontainer {
+        padding: 30px;
+        width: 90%;
+    }
+
+    #clock {
+        padding: 20px 30px;
+    }
+
+    #d1 {
+        font-size: 4em;
+        letter-spacing: 4px;
+    }
+
+    .colon {
+        font-size: 4em;
+    }
+}
+
+
+ @media (max-width: 680px) {
+    #clockcontainer {
+        padding: 20px;
+    }
+
+    #clock {
+        padding: 15px 20px;
+    }
+
+    #d1 {
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+
+    .colon {
+        font-size: 3em;
+    }
+} 
